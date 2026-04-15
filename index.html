@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mensagem</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: #ff0000;
+      font-size: 60px;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 id="mensagem"></h1>
+
+  <script>
+    document.getElementById("mensagem").innerText = "TE AMOOO ❤️";
+  </script>
+
+</body>
+</html>
